@@ -10,17 +10,19 @@
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-    
-    <!-- <meta name="keywords" content="">
-    <meta name="description" content=""> -->
-  
-  <meta property="og:type" content="website">
+  <meta name="description" content="文件上传:客户端把文件上传到服务器, 服务器保存客户上传的文件:1)把文件保存到数据库中(表对应文件的字段的数据类型: blob), 很少使用,  文件保存到数据库麻烦(通过编写存储过程), 从数据库取文件也麻烦2)把文件保存到web服务器的硬盘, 数据库中存放的文件的路径   学习   Web服务器的压力大, 用户操作文件(大量的IO操作), 需要访问web服务器,3)再搭建一个文件服务器,专门">
+<meta property="og:type" content="article">
 <meta property="og:title" content="熊思翊">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/2020/11/30/%E7%85%A7%E7%89%87%E8%A7%86%E9%A2%91%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0oracle%E6%95%B0%E6%8D%AE%E5%BA%93/index.html">
 <meta property="og:site_name" content="熊思翊">
+<meta property="og:description" content="文件上传:客户端把文件上传到服务器, 服务器保存客户上传的文件:1)把文件保存到数据库中(表对应文件的字段的数据类型: blob), 很少使用,  文件保存到数据库麻烦(通过编写存储过程), 从数据库取文件也麻烦2)把文件保存到web服务器的硬盘, 数据库中存放的文件的路径   学习   Web服务器的压力大, 用户操作文件(大量的IO操作), 需要访问web服务器,3)再搭建一个文件服务器,专门">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201130114607263.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwOTE3NA==,size_16,color_FFFFFF,t_70">
+<meta property="article:published_time" content="2020-11-30T13:52:15.618Z">
+<meta property="article:modified_time" content="2020-11-30T14:31:09.693Z">
 <meta property="article:author" content="Carol">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20201130114607263.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwOTE3NA==,size_16,color_FFFFFF,t_70">
   
     <link rel="alternative" href="/atom.xml" title="熊思翊" type="application/atom+xml">
   
@@ -193,193 +195,80 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-
-  
-    <article id="post-Mybatis的缓存机" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h2 id="Mybatis的缓存机制"><a href="#Mybatis的缓存机制" class="headerlink" title="Mybatis的缓存机制"></a>Mybatis的缓存机制</h2><p><strong>1. 一级缓存</strong>: 基于SqlSession级别 –&gt; localCache<br>    <strong>2. 二级缓存</strong>: 基于Mapper的namespace级别 –&gt; 缓存数据存在Map<br>            key: namespace+SQL+参数, 第三方: Echcache, Redis(key,value)<br>            默认情况下,没有开启二级缓存</p>
-    
-    <a class="article-more-a" href="/2020/11/30/Mybatis%E7%9A%84%E7%BC%93%E5%AD%98%E6%9C%BA/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/11/30/Mybatis%E7%9A%84%E7%BC%93%E5%AD%98%E6%9C%BA/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-lambda表达式写法学习" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h1 id="lambda表达式"><a href="#lambda表达式" class="headerlink" title="lambda表达式"></a>lambda表达式</h1>
-    
-    <a class="article-more-a" href="/2020/11/30/lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%86%99%E6%B3%95%E5%AD%A6%E4%B9%A0/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/11/30/lambda%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%86%99%E6%B3%95%E5%AD%A6%E4%B9%A0/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-java8 的集合-数组的Stream操作" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h1 id="Stream流操作"><a href="#Stream流操作" class="headerlink" title="Stream流操作"></a>Stream流操作</h1><ul>
-<li><p>java8 的集合/数组的Stream操作  函数式编程:  Function接口   lambda表达式</p>
-</li>
-<li><p>特征:</p>
-</li>
-<li><p> 1  流不会存储元素,遍历完一次就等于消费完了.</p>
-</li>
-<li><ol start="2">
-<li>流都是懒加载的,只有你用到结果的时候才会去执行.</li>
-</ol>
-</li>
-<li><ol start="3">
-<li><p><strong>流只会操作数据,不会改变数据</strong>.</p>
-    
-    <a class="article-more-a" href="/2020/11/30/java8%20%E7%9A%84%E9%9B%86%E5%90%88-%E6%95%B0%E7%BB%84%E7%9A%84Stream%E6%93%8D%E4%BD%9C/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/11/30/java8%20%E7%9A%84%E9%9B%86%E5%90%88-%E6%95%B0%E7%BB%84%E7%9A%84Stream%E6%93%8D%E4%BD%9C/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-照片视频文件上传到oracle数据库" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-照片视频文件上传到oracle数据库" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
   <div class="article-entry" itemprop="articleBody">
     
     <h2 id="文件上传"><a href="#文件上传" class="headerlink" title="文件上传:"></a>文件上传:</h2><p>客户端把文件上传到服务器,<br> 服务器保存客户上传的文件:<br>1)把文件保存到数据库中(表对应文件的字段的数据类型: blob), 很少使用,<br>  文件保存到数据库麻烦(通过编写存储过程), 从数据库取文件也麻烦<br>2)把文件保存到web服务器的硬盘, 数据库中存放的文件的路径   学习<br>   Web服务器的压力大, 用户操作文件(大量的IO操作), 需要访问web服务器,<br>3)再搭建一个文件服务器,专门用于存放上传的文件, 数据库中存放的文件的url(网络路径), 模式与2一样,  把文件与web服务器分离, 减轻web服务器的压力<br>    Linux操作系统</p>
-    
-    <a class="article-more-a" href="/2020/11/30/%E7%85%A7%E7%89%87%E8%A7%86%E9%A2%91%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0oracle%E6%95%B0%E6%8D%AE%E5%BA%93/#more">more >></a>
-    
-    
+<a id="more"></a>
+
+<p>文件上传的环境:<br>1)前端页面的设置:<br>A)使用 <input  type=”file”/>  文件域标签<br>B)对form表单的标签的method=”post”请求<br>C)对form表单的标签的enctype的属性设置:<br>   enctype的默认值: application/x-www-form-urlencoded 对内容进行url编码, 而文件本身就是二进制, 不能进行编码,一旦编码, 变成文本, 不再是文件.<br>          enctype的值设置为: multipart/form-data     对内容不进行编码<br>2)后台的设置:<br>A)导入用于文件上传的第三方jar:</p>
+<p>B)一旦前端表单设置enctype为”multipart/form-data”<br>request.getParamter()这一类获取请求参数的方法失效</p>
+<p>文件上传的编码实现:<br>1)创建工厂类DiskFileItemFactory对象<br>2)创建一个文件上传的解析器对象  ServletFileUpload ,用于解析request请求<br>3)使用解析器对象解析request, (把request中包含的请求参数获取到)<br>调用解析器对象的List<FileItem>  parseRequest(request)<br>4)遍历List集合获取到每一个FileItem(对应的就是表单中每一项:input)<br>5)判断FileItem是否是文件域还是普通表单元素,如果是普通表单项. 获取这个表单项的value值, 如果是文件域, 把文件保存到指定的硬盘位置</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//设置请求体编码</span></span><br><span class="line">request.setCharacterEncoding(<span class="string">&quot;UTF-8&quot;</span>);</span><br><span class="line"><span class="comment">//1 ,先判断上传的数据是否多段数据（只有是多段的数据，才是文件上传的）</span></span><br><span class="line"><span class="keyword">if</span> (ServletFileUpload.isMultipartContent(request)) &#123;</span><br><span class="line">    <span class="comment">// 2 ,创建 FileItemFactory 工厂实现类</span></span><br><span class="line">    FileItemFactory fileItemFactory = <span class="keyword">new</span> DiskFileItemFactory();</span><br><span class="line">    <span class="comment">// 3,创建用于解析上传数据的工具类 ServletFileUpload 类</span></span><br><span class="line">    ServletFileUpload servletFileUpload = <span class="keyword">new</span> ServletFileUpload(fileItemFactory);</span><br><span class="line">    <span class="comment">//4,设置上传文件大小  默认单位字节</span></span><br><span class="line">    servletFileUpload.setFileSizeMax(<span class="number">3000</span>*<span class="number">1024</span>);</span><br><span class="line">    Student student = <span class="keyword">new</span> Student(); <span class="comment">//创建对象来接收数据</span></span><br><span class="line">    <span class="keyword">try</span> &#123;<span class="comment">// 5,解析上传的数据，得到含有每一个表单项 FileItem 的list集合</span></span><br><span class="line">        List&lt;FileItem&gt; list = servletFileUpload.parseRequest(request);</span><br><span class="line">        <span class="comment">// 6,循环判断，每一个表单项，是普通类型，还是上传的文件</span></span><br><span class="line">        <span class="keyword">for</span> (FileItem fileItem : list) &#123;</span><br><span class="line">            <span class="keyword">if</span> (fileItem.isFormField()) &#123;</span><br><span class="line">                <span class="comment">//6.1 普通表单项</span></span><br><span class="line">                String name = fileItem.getFieldName();</span><br><span class="line">                <span class="keyword">if</span>(name.equals(<span class="string">&quot;name&quot;</span>))&#123;</span><br><span class="line">                    student.setName(fileItem.getString(<span class="string">&quot;UTf-8&quot;</span>));</span><br><span class="line">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>(name.equals(<span class="string">&quot;password&quot;</span>))&#123;</span><br><span class="line">                 String  password = fileItem.getString(<span class="string">&quot;UTf-8&quot;</span>);</span><br><span class="line">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>(name.equals(<span class="string">&quot;birth&quot;</span>))&#123;</span><br><span class="line">                    student.setBirth(fileItem.getString(<span class="string">&quot;UTf-8&quot;</span>));</span><br><span class="line">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>(name.equals(<span class="string">&quot;cardId&quot;</span>))&#123;</span><br><span class="line">                    student.setCardId(Long.parseLong(fileItem.getString(<span class="string">&quot;UTf-8&quot;</span>)));</span><br><span class="line">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>(name.equals(<span class="string">&quot;sex&quot;</span>))&#123;</span><br><span class="line">                    student.setSex(fileItem.getString(<span class="string">&quot;UTf-8&quot;</span>));</span><br><span class="line">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>(name.equals(<span class="string">&quot;education&quot;</span>))&#123;</span><br><span class="line">                    student.setEducation((fileItem.getString(<span class="string">&quot;UTf-8&quot;</span>)));</span><br><span class="line">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>(name.equals(<span class="string">&quot;school&quot;</span>))&#123;</span><br><span class="line">                    student.setSchool((fileItem.getString(<span class="string">&quot;UTf-8&quot;</span>)));</span><br><span class="line">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>(name.equals(<span class="string">&quot;major&quot;</span>))&#123;</span><br><span class="line">                    student.setMajor((fileItem.getString(<span class="string">&quot;UTf-8&quot;</span>)));</span><br><span class="line">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>(name.equals(<span class="string">&quot;startTime&quot;</span>))&#123;</span><br><span class="line">                    student.setStartTime((fileItem.getString(<span class="string">&quot;UTf-8&quot;</span>)));</span><br><span class="line">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>(name.equals(<span class="string">&quot;state&quot;</span>))&#123;</span><br><span class="line">                    student.setState((fileItem.getString(<span class="string">&quot;UTf-8&quot;</span>)));</span><br><span class="line">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>(name.equals(<span class="string">&quot;phoneNumber&quot;</span>))&#123;</span><br><span class="line">                    student.setPhoneNumber(Integer.parseInt(fileItem.getString(<span class="string">&quot;UTf-8&quot;</span>)));</span><br><span class="line">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>(name.equals(<span class="string">&quot;secondPhone&quot;</span>))&#123;</span><br><span class="line">                    student.setSecondPhone(Integer.parseInt(fileItem.getString(<span class="string">&quot;UTf-8&quot;</span>)));</span><br><span class="line">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>(name.equals(<span class="string">&quot;qq&quot;</span>))&#123;</span><br><span class="line">                    student.setqq(Integer.parseInt(fileItem.getString(<span class="string">&quot;UTf-8&quot;</span>)));</span><br><span class="line">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>(name.equals(<span class="string">&quot;email&quot;</span>))&#123;</span><br><span class="line">                    student.setEmail(fileItem.getString(<span class="string">&quot;UTf-8&quot;</span>));</span><br><span class="line">                &#125;<span class="keyword">else</span> <span class="keyword">if</span>(name.equals(<span class="string">&quot;address&quot;</span>))&#123;</span><br><span class="line">                    student.setAddress(fileItem.getString(<span class="string">&quot;UTf-8&quot;</span>));</span><br><span class="line">                &#125;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line"></span><br><span class="line">                <span class="comment">//6.2 保存文件  调用FileItem的write(保存的文件路径)</span></span><br><span class="line">                String filename = fileItem.getName(); <span class="comment">//xxx.jpg</span></span><br><span class="line">                <span class="comment">//随机生成一个文件名,保证不重复</span></span><br><span class="line">                <span class="comment">// 1) 第一种策略: 时间戳  当前时间的毫秒值作为文件名  时间戳+其他的字符</span></span><br><span class="line">                <span class="comment">//String saveFilename = System.currentTimeMillis()+FileUploadUtils.getSuffix(filename);</span></span><br><span class="line">                <span class="comment">//2) 使用UUID  随机生成一个32位16进制的字符, 保证同一台电脑生成uuid的值 出现重复的概率: 0.000000001</span></span><br><span class="line">                String suffix = FileUploadUtils.getSuffix(filename);</span><br><span class="line">                <span class="keyword">if</span>(suffix.equals(<span class="string">&quot;.jpg&quot;</span>)||suffix.equals(<span class="string">&quot;.jpeg&quot;</span>)</span><br><span class="line">                        ||suffix.equals(<span class="string">&quot;.gif&quot;</span>)||suffix.equals(<span class="string">&quot;.png&quot;</span>))&#123;</span><br><span class="line">                    String saveFilename = UUIDUtils.getUUIDStr()+suffix;</span><br><span class="line">                    File saveFile = <span class="keyword">new</span> File(FileUploadUtils.getSavePathFile(),saveFilename);</span><br><span class="line">                    <span class="comment">//给student对象的photo属性赋值</span></span><br><span class="line">                    student.setPhoto(saveFilename);</span><br><span class="line">                    fileItem.write(saveFile);</span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    request.setAttribute(<span class="string">&quot;msg&quot;</span>, <span class="string">&quot;头像必须是图片: 支持图片后缀名:.jpg/.gif/.png/.jpeg&quot;</span>);</span><br><span class="line">                    request.getRequestDispatcher(<span class="string">&quot;/jsp/error.jsp&quot;</span>).forward(request, response);</span><br><span class="line">                    <span class="keyword">return</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//调用IAddStudentService层的方法</span></span><br><span class="line">        IAddStudentService addStudentService = <span class="keyword">new</span> AddStudentServiceImpl();</span><br><span class="line">        <span class="keyword">int</span> rs = addStudentService.insertOne(student.getName(),student.getCardId(),student.getSex(),student.getEducation(),</span><br><span class="line">                student.getSchool(),student.getMajor(),student.getStartTime(),student.getBirth(),student.getState(),</span><br><span class="line">                student.getPhoneNumber(),student.getSecondPhone(),student.getqq(),student.getEmail(),student.getAddress(),student.getPhoto(),student.getGreade());</span><br><span class="line">        <span class="keyword">if</span>(rs &gt; <span class="number">0</span>)&#123;</span><br><span class="line">            request.setAttribute(<span class="string">&quot;msg&quot;</span>, <span class="string">&quot;添加客户成功&quot;</span>);</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">            request.setAttribute(<span class="string">&quot;msg&quot;</span>, <span class="string">&quot;添加客户失败&quot;</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//跳转到msg.jsp   转发/重定向</span></span><br><span class="line">        request.getRequestDispatcher(<span class="string">&quot;/jsp/msg.jsp&quot;</span>).forward(request, response);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#125;<span class="keyword">catch</span> (FileUploadException e) &#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125; <span class="keyword">catch</span> (Exception e)&#123;</span><br><span class="line">        e.printStackTrace();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<p>图片保存在tomcat之外的目录下, 通过tomcat服务器无法访问这个目录下的资源<br>因为这个目录在Tomcat配置文件没有对应的url与它绑定<br>设置Tomcat的虚拟路径:<br>  通用设置:  eclipse在tomcat的server.xml文件中设置一个虚拟路径<br><Context docBase="目录的真实路径" path="/绑定的url" reloadable="true"/></p>
+<p>IDEA通过虚拟路径访问图片<br>1、在tomcat的conf文件夹中，配置server.xml文件；在<br><Host name="localhost"  appBase="webapps" unpackWARs="true" autoDeploy="true"></Host>节点下插入如下内容：<br><Context path="/res" docBase="G:\res" reloadable="false" debug="0" crossContext="true"/><br>path:访问图片的虚拟路径；<br>docBase：图片实际的存放路径。<br>2、配置tomcat<br>只配置xml文件是不够的，还需要配置idea中的tomcat；<br>1）打开tomcat配置界面，选择deployment；<br>2）选择+号，点击External Source；<br>3）打开对话框，选择Server.xml中配置的路径文件夹(docBase)；<br>4）输入第四步Application Context，该路径为xml重配置的path<br>5）保存，运行即可</p>
+<p><img src="https://img-blog.csdnimg.cn/20201130114607263.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwOTE3NA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
 
     
 
+    
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/alipay.jpg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/weixin.jpg">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
+        </div>
+      </a>
+    </div>
+    
+
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          Carol
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="http://example.com/2020/11/30/照片视频文件上传到oracle数据库/" title="" target="_blank">http://example.com/2020/11/30/照片视频文件上传到oracle数据库/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
+          
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
     
 
   </div>
@@ -389,16 +278,85 @@
     
 
     
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/11/30/%E7%85%A7%E7%89%87%E8%A7%86%E9%A2%91%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0oracle%E6%95%B0%E6%8D%AE%E5%BA%93/">展开全文 >></a>
-    </p>
+
     
+    
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <!-- <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a> -->
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+     <!-- <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/11/30/%E7%85%A7%E7%89%87%E8%A7%86%E9%A2%91%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0oracle%E6%95%B0%E6%8D%AE%E5%BA%93/" alt="微信分享二维码"> -->
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
 
     
     <div class="clearfix"></div>
   </div>
   </div>
 </article>
+
+
+<nav id="article-nav">
+  
+    <a href="/2020/11/30/java8%20%E7%9A%84%E9%9B%86%E5%90%88-%E6%95%B0%E7%BB%84%E7%9A%84Stream%E6%93%8D%E4%BD%9C/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/11/30/IDEA%E5%90%AF%E5%8A%A8Tomcat%E6%8A%A5%E9%94%99Address%20localhost1099%20is%20already%20in%20use%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%E5%A6%82%E4%B8%8B/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -419,222 +377,14 @@
 
 
 
-  
-    <article id="post-IDEA启动Tomcat报错Address localhost1099 is already in use解决办法如下" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h1 id="IDEA启动Tomcat报错Address-localhost-1099-is-already-in-use解决办法"><a href="#IDEA启动Tomcat报错Address-localhost-1099-is-already-in-use解决办法" class="headerlink" title="IDEA启动Tomcat报错Address localhost:1099 is already in use解决办法"></a><a target="_blank" rel="noopener" href="https://www.cnblogs.com/feynman61/p/9169441.html">IDEA启动Tomcat报错Address localhost:1099 is already in use解决办法</a></h1><p>问题：Error running ‘lugia-web’: Address loaclhost:1099 is already in use如下图</p>
-<p><img src="https://img-blog.csdnimg.cn/img_convert/695c434e024c236898f325a66b4b5754.png" alt="img"></p>
-    
-    <a class="article-more-a" href="/2020/11/30/IDEA%E5%90%AF%E5%8A%A8Tomcat%E6%8A%A5%E9%94%99Address%20localhost1099%20is%20already%20in%20use%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%E5%A6%82%E4%B8%8B/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/11/30/IDEA%E5%90%AF%E5%8A%A8Tomcat%E6%8A%A5%E9%94%99Address%20localhost1099%20is%20already%20in%20use%E8%A7%A3%E5%86%B3%E5%8A%9E%E6%B3%95%E5%A6%82%E4%B8%8B/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
 
 
 
 
-  
-    <article id="post-使用ajax发送数据的两种方式" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h1 id="Ajax笔记"><a href="#Ajax笔记" class="headerlink" title="Ajax笔记"></a>Ajax笔记</h1><h2 id="一-使用ajax发送数据的两种方式"><a href="#一-使用ajax发送数据的两种方式" class="headerlink" title="一\使用ajax发送数据的两种方式"></a>一\使用ajax发送数据的两种方式</h2><h3 id="①利用ajax的serialize-方法-把一个-form-表单中所有的表单项-都以字符串-name-value-amp-name-value-的形式进行拼接"><a href="#①利用ajax的serialize-方法-把一个-form-表单中所有的表单项-都以字符串-name-value-amp-name-value-的形式进行拼接" class="headerlink" title="①利用ajax的serialize() 方法,把一个 form 表单中所有的表单项,都以字符串 name=value&amp;name=value 的形式进行拼接"></a>①利用ajax的serialize() 方法,把一个 form 表单中所有的表单项,都以字符串 name=value&amp;name=value 的形式进行拼接</h3>
-    
-    <a class="article-more-a" href="/2020/11/30/%E4%BD%BF%E7%94%A8ajax%E5%8F%91%E9%80%81%E6%95%B0%E6%8D%AE%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/11/30/%E4%BD%BF%E7%94%A8ajax%E5%8F%91%E9%80%81%E6%95%B0%E6%8D%AE%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
 
 
 
 
-  
-    <article id="post-Maven介绍,IDEA安装和配置maven和maven指令" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h2 id="Maven"><a href="#Maven" class="headerlink" title="Maven"></a>Maven</h2><p><strong>构建项目的工具</strong></p>
-<p><strong>一,非maven项目:</strong><br>1)第三方jar,需要自己下载,把jar拷贝到项目中<br>2)自己的项目需要打包,需要使用idea进行打包,其他项目需要使用,把jar拷贝到其他项目,如果jar对应项目更新,需要手动进行更新(重新打包),把其他项目之前jar删除,重新把新的jar拷贝到其他项目<br>3)jar之前的依赖关系,需要自己了解<br>4)对项目的整个构建(从项目开始(创建项目),编译,测试,运行 到项目结束(打包)),每一个步骤都要<br>手动操作<br>5)项目结构没有统一的标准,多人,多团队开发,在项目合并会发生冲突</p>
-    
-    <a class="article-more-a" href="/2020/11/30/Maven%E4%BB%8B%E7%BB%8D,IDEA%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AEmaven%E5%92%8Cmaven%E6%8C%87%E4%BB%A4/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/11/30/Maven%E4%BB%8B%E7%BB%8D,IDEA%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AEmaven%E5%92%8Cmaven%E6%8C%87%E4%BB%A4/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-IDEA创建web项目及其Tomcat配置热部署问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-  <div class="article-entry" itemprop="articleBody">
-    
-    <h1 id="IDEA创建web项目及其Tomcat配置热部署问题"><a href="#IDEA创建web项目及其Tomcat配置热部署问题" class="headerlink" title="IDEA创建web项目及其Tomcat配置热部署问题"></a>IDEA创建web项目及其Tomcat配置热部署问题</h1><h2 id="一-下载Tomcat"><a href="#一-下载Tomcat" class="headerlink" title="一,下载Tomcat"></a>一,下载Tomcat</h2><h3 id="网址为-http-tomcat-apache-org"><a href="#网址为-http-tomcat-apache-org" class="headerlink" title="网址为:http://tomcat.apache.org/"></a>网址为:<a target="_blank" rel="noopener" href="http://tomcat.apache.org/">http://tomcat.apache.org/</a></h3>
-    
-    <a class="article-more-a" href="/2020/11/30/IDEA%E5%88%9B%E5%BB%BAweb%E9%A1%B9%E7%9B%AE%E5%8F%8A%E5%85%B6Tomcat%E9%85%8D%E7%BD%AE%E7%83%AD%E9%83%A8%E7%BD%B2%E9%97%AE%E9%A2%98/#more">more >></a>
-    
-    
-
-    
-
-    
-
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/11/30/IDEA%E5%88%9B%E5%BB%BAweb%E9%A1%B9%E7%9B%AE%E5%8F%8A%E5%85%B6Tomcat%E9%85%8D%E7%BD%AE%E7%83%AD%E9%83%A8%E7%BD%B2%E9%97%AE%E9%A2%98/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
 
 
           </div>
@@ -674,8 +424,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
