@@ -16,7 +16,7 @@
 <meta property="og:url" content="http://example.com/2020/11/30/IDEA%E5%88%9B%E5%BB%BAweb%E9%A1%B9%E7%9B%AE%E5%8F%8A%E5%85%B6Tomcat%E9%85%8D%E7%BD%AE%E7%83%AD%E9%83%A8%E7%BD%B2%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="熊思翊">
 <meta property="og:description" content="IDEA创建web项目及其Tomcat配置热部署问题一,下载Tomcat网址为:http:&#x2F;&#x2F;tomcat.apache.org&#x2F;">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20201130154701376.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwOTE3NA==,size_16,color_FFFFFF,t_70#pic_center">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20201130154723986.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjIwOTE3NA==,size_16,color_FFFFFF,t_70#pic_center">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/20201130154812181.png#pic_center">
@@ -100,6 +100,8 @@
 			<h1 class="header-author"><a href="/">Carol</a></h1>
 		</hgroup>
 		
+		<p class="header-subtitle">熊二</p>
+		
 
 		<nav class="header-menu">
 			<ul>
@@ -107,6 +109,8 @@
 				<li><a href="/" target="_blank">主页</a></li>
 			
 				<li><a href="https://blog.csdn.net/weixin_42209174" target="_blank">技术笔记</a></li>
+			
+				<li><a href="/tags/%E9%9A%8F%E7%AC%94/" target="_blank">随笔</a></li>
 			
 				<li><a href="/categories" target="_blank">分类</a></li>
 			
@@ -183,7 +187,11 @@
 			  <h1 class="header-author js-header-author">Carol</h1>
 			</hgroup>
 			
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>熊二<i class="icon icon-quo-right"></i></p>
 			
+			
+			
+				
 			
 				
 			
@@ -212,15 +220,17 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 20%"><a href="/">主页</a></li>
+					<li style="width: 16.666666666666668%"><a href="/">主页</a></li>
 		        
-					<li style="width: 20%"><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42209174">技术笔记</a></li>
+					<li style="width: 16.666666666666668%"><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42209174">技术笔记</a></li>
 		        
-					<li style="width: 20%"><a href="/categories">分类</a></li>
+					<li style="width: 16.666666666666668%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 		        
-					<li style="width: 20%"><a href="/archives">归档</a></li>
+					<li style="width: 16.666666666666668%"><a href="/categories">分类</a></li>
 		        
-					<li style="width: 20%"><a href="/tags">标签</a></li>
+					<li style="width: 16.666666666666668%"><a href="/archives">归档</a></li>
+		        
+					<li style="width: 16.666666666666668%"><a href="/tags">标签</a></li>
 		        
 				</ul>
 			</nav>
@@ -451,7 +461,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018-2020 <a href="http://example.com/" target="_blank">Carol</a>
+    		&copy; 2020 <a href="http://example.com/" target="_blank">Carol</a>
     	</div>
       	<div class="footer-right">
 			
@@ -743,6 +753,56 @@
   
   <!-- <script async type="text/javascript" size="90" alpha="0.2" zIndex="0" src="/plugins/ribbon.js/ribbon.min.js"></script> -->
   
+  
+    <script type="text/javascript" src="/plugins/live2d-widget.js/L2Dwidget.min.js"></script>
+<script type="text/javascript">
+  /**
+   * 完整配置请参考：https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html#instance-method-init
+   */
+  var pluginModelPath = "assets/", // 模型的文件路径，无需更改
+    pluginRootPath = "/live2d_models/"; // 插件的路径，无需更改
+  //特定的模型json文件名称
+  var modelPathJson = {
+    "epsilon2_1": "Epsilon2.1",
+    "gf": "Gantzert_Felixander",
+    "haru/01": "haru01",
+    "haru/02": "haru02",
+    "nietzsche": "nietzche"
+  }
+
+  
+    var modelName = "hibiki";
+  
+
+  var modelJsonPath = "";
+  if (modelPathJson[modelName]) {
+    modelJsonPath = pluginRootPath + modelName + "/" + pluginModelPath + modelPathJson[modelName] +
+      ".model.json";
+  } else {
+    modelJsonPath = pluginRootPath + modelName + "/" + pluginModelPath + modelName + ".model.json";
+  }
+  L2Dwidget.init({
+    model: {
+      jsonPath: modelJsonPath
+    },
+    display: {
+       position: "right", 
+       width: 145, 
+       height: 315, 
+       hOffset: 50, 
+      
+    },
+    mobile: {
+       show: false, 
+       scale: 0.6 
+    },
+    react: {
+       opacity: 0.8 
+    }
+  })
+
+</script>
+
   
   
 </body>

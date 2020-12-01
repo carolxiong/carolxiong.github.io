@@ -16,7 +16,7 @@
 <meta property="og:url" content="http://example.com/2020/11/30/%E4%BD%BF%E7%94%A8ajax%E5%8F%91%E9%80%81%E6%95%B0%E6%8D%AE%E7%9A%84%E4%B8%A4%E7%A7%8D%E6%96%B9%E5%BC%8F/index.html">
 <meta property="og:site_name" content="熊思翊">
 <meta property="og:description" content="Ajax笔记一\使用ajax发送数据的两种方式①利用ajax的serialize() 方法,把一个 form 表单中所有的表单项,都以字符串 name&#x3D;value&amp;name&#x3D;value 的形式进行拼接">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-11-30T13:51:52.678Z">
 <meta property="article:modified_time" content="2020-11-30T14:30:50.577Z">
 <meta property="article:author" content="Carol">
@@ -69,6 +69,8 @@
 			<h1 class="header-author"><a href="/">Carol</a></h1>
 		</hgroup>
 		
+		<p class="header-subtitle">熊二</p>
+		
 
 		<nav class="header-menu">
 			<ul>
@@ -76,6 +78,8 @@
 				<li><a href="/" target="_blank">主页</a></li>
 			
 				<li><a href="https://blog.csdn.net/weixin_42209174" target="_blank">技术笔记</a></li>
+			
+				<li><a href="/tags/%E9%9A%8F%E7%AC%94/" target="_blank">随笔</a></li>
 			
 				<li><a href="/categories" target="_blank">分类</a></li>
 			
@@ -152,7 +156,11 @@
 			  <h1 class="header-author js-header-author">Carol</h1>
 			</hgroup>
 			
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>熊二<i class="icon icon-quo-right"></i></p>
 			
+			
+			
+				
 			
 				
 			
@@ -181,15 +189,17 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 20%"><a href="/">主页</a></li>
+					<li style="width: 16.666666666666668%"><a href="/">主页</a></li>
 		        
-					<li style="width: 20%"><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42209174">技术笔记</a></li>
+					<li style="width: 16.666666666666668%"><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_42209174">技术笔记</a></li>
 		        
-					<li style="width: 20%"><a href="/categories">分类</a></li>
+					<li style="width: 16.666666666666668%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 		        
-					<li style="width: 20%"><a href="/archives">归档</a></li>
+					<li style="width: 16.666666666666668%"><a href="/categories">分类</a></li>
 		        
-					<li style="width: 20%"><a href="/tags">标签</a></li>
+					<li style="width: 16.666666666666668%"><a href="/archives">归档</a></li>
+		        
+					<li style="width: 16.666666666666668%"><a href="/tags">标签</a></li>
 		        
 				</ul>
 			</nav>
@@ -400,7 +410,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2018-2020 <a href="http://example.com/" target="_blank">Carol</a>
+    		&copy; 2020 <a href="http://example.com/" target="_blank">Carol</a>
     	</div>
       	<div class="footer-right">
 			
@@ -692,6 +702,56 @@
   
   <!-- <script async type="text/javascript" size="90" alpha="0.2" zIndex="0" src="/plugins/ribbon.js/ribbon.min.js"></script> -->
   
+  
+    <script type="text/javascript" src="/plugins/live2d-widget.js/L2Dwidget.min.js"></script>
+<script type="text/javascript">
+  /**
+   * 完整配置请参考：https://l2dwidget.js.org/docs/class/src/index.js~L2Dwidget.html#instance-method-init
+   */
+  var pluginModelPath = "assets/", // 模型的文件路径，无需更改
+    pluginRootPath = "/live2d_models/"; // 插件的路径，无需更改
+  //特定的模型json文件名称
+  var modelPathJson = {
+    "epsilon2_1": "Epsilon2.1",
+    "gf": "Gantzert_Felixander",
+    "haru/01": "haru01",
+    "haru/02": "haru02",
+    "nietzsche": "nietzche"
+  }
+
+  
+    var modelName = "hibiki";
+  
+
+  var modelJsonPath = "";
+  if (modelPathJson[modelName]) {
+    modelJsonPath = pluginRootPath + modelName + "/" + pluginModelPath + modelPathJson[modelName] +
+      ".model.json";
+  } else {
+    modelJsonPath = pluginRootPath + modelName + "/" + pluginModelPath + modelName + ".model.json";
+  }
+  L2Dwidget.init({
+    model: {
+      jsonPath: modelJsonPath
+    },
+    display: {
+       position: "right", 
+       width: 145, 
+       height: 315, 
+       hOffset: 50, 
+      
+    },
+    mobile: {
+       show: false, 
+       scale: 0.6 
+    },
+    react: {
+       opacity: 0.8 
+    }
+  })
+
+</script>
+
   
   
 </body>
